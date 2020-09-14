@@ -1,0 +1,209 @@
+section {
+    min-height: 420px;
+}
+
+body {
+    font-family: mulish;
+}
+
+/* Navbar */
+.navbar {
+    text-transform: uppercase;
+    background-color: #4f8a8b;
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Jumbotron */
+.jumbotron {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("picture/Market.jpg");
+    background-size: cover;
+    /* untuk membuat gambar tetap diam tidak bergerak saat di scroll */
+    background-attachment: fixed;
+    height: 540px;
+    text-align: center;
+    position: relative;
+
+}
+
+/* Memberikan efek shading pada teks */
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.jumbotron .display-4 b {
+    font-weight: 500;
+}
+
+/* Akhir Jumbotron */
+
+
+/* Tentang kami */
+.color {
+    background-color: #f6f5f5;
+}
+
+.font {
+    font-weight: 300;
+    font-size: 100%;
+    color: #f37121;
+}
+
+/* Untuk memberikan efek parallax */
+.gkiri,
+.paragkanan {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 1s;
+}
+
+.paragkanan {
+    transform: translate(0, 40px);
+}
+
+.gkiri.pmuncul,
+.paragkanan.pmuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Akhir Tentang kami */
+
+
+/* Produk */
+/* Untuk memberikan efek parallax pada sebuah website */
+.produk .card {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 0.5s;
+}
+
+.produk .card.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Akhir produk */
+
+/* Keuntungan */
+.txt,
+.info {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 0.5s;
+}
+
+.txt.muncul,
+.info.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Akhir keuntungan */
+
+/* Semua yang menggunakan About */
+.about {
+    color: #f37121;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+
+.about h2::after {
+    content: '';
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 3px solid #5FB69C;
+    width: 65px;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    color: white;
+}
+
+.tombol:hover {
+    color: white;
+}
+
+.button {
+    text-transform: capitalize;
+    border-radius: 30%;
+    color: white;
+    background-color: #f37121;
+}
+
+.button:hover {
+    background-color: #f6f5f5;
+    color: #f37121;
+}
+
+.cek {
+    border-radius: 30px;
+    font-size: 24px;
+}
+
+/* Info panel */
+.info img {
+    width: 50%;
+}
+
+/* Footer */
+/* Memberikan efek warna pada footer */
+.white {
+    color: white;
+}
+
+.white a {
+    color: white;
+}
+
+.footer {
+    background-color: #ee6f57;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+    /* Navbar */
+
+    .navbar-brand {
+        color: #fbd46d !important;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+        font-family: 'Mulish', sans-serif;
+        font-weight: 700;
+        font-size: 34px;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #fbd46d;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    /* Tentang kami */
+    .font {
+        font-weight: 300;
+        font-size: 24px !important;
+    }
+}

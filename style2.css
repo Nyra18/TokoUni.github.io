@@ -1,0 +1,140 @@
+section {
+    min-height: 420px;
+}
+
+body {
+    font-family: mulish;
+}
+
+/* Navbar */
+.navbar {
+    text-transform: uppercase;
+    background-color: #4f8a8b;
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("picture/Market.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 340px;
+    text-align: center;
+    position: relative;
+
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 100px;
+    font-weight: 200;
+    /* Memberikan efek shading pada teks */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 300%;
+    margin-bottom: 50px;
+}
+
+.jumbotron .display-4 b {
+    font-weight: 500;
+}
+
+/* Detail harga */
+
+.font {
+    font-weight: 300;
+    font-size: 100%;
+    color: #f37121;
+}
+
+/* Garis bawah pada katalog harga */
+.about h2::after {
+    content: '';
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 3px solid #5FB69C;
+    width: 80px;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+/* Untuk share with*/
+.icon img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    color: white;
+}
+
+.tombol:hover {
+    color: white;
+}
+
+/* footer */
+/* Memberikan efek warna pada footer */
+.white {
+    color: white;
+}
+
+.white a {
+    color: white;
+}
+
+.footer {
+    background-color: #ee6f57;
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+
+    /* Navbar */
+
+    .navbar-brand {
+        color: #fbd46d !important;
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+        font-family: 'Mulish', sans-serif;
+        font-weight: 700;
+        font-size: 34px;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #fbd46d;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    /* Jumbotron */
+    .jumbotron .display-4 {
+        color: white;
+        margin-top: 100px;
+        font-weight: 200;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    /* Share with */
+    .responsiv h1 {
+        font-size: 40px;
+    }
+
+}

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en" id="home">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- My fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+
+    <title>Toko Uni</title>
+
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #4f8a8b;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body class="mt-4">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand page-scroll" href="#home">TOKO UNI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a data-scroll class="nav-item nav-link page-scroll" href="#home">Beranda</a>
+                    <a data-scroll class="nav-item nav-link page-scroll" href="#tentangkami">Tentang Kami</a>
+                    <a data-scroll class="nav-item nav-link page-scroll" href="#produk">Katalog Harga</a>
+                    <a class="nav-item btn btn-success tombol"
+                        href="https://api.whatsapp.com/send?phone=6282116796993&text=Saya%20tertarik%20untuk%20membeli%20produk%20yang%20anda%20jual">
+                        <img src="picture/Whatsapp.png" alt=""> Pesan Via whatsapp</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir navbar -->
+
+    <!-- Back to top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> <img src="pic/icons8-long-arrow-up-26.png" alt="">
+    </button>
+    <!-- Akhir back to top -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+
+        <div class="container text-center">
+            <h1 class="display-4"><b>Selamat Datang di Toko Kami!</b></h1>
+            <a href="katalog harga.html"><button type="button" class="btn btn-outline-warning cek">Cek Harga
+                    Barang</button></a>
+        </div>
+    </div>
+    <!-- Akhir jumbotron -->
+
+    <!-- Tentang kami -->
+    <section class="tentangkami" id="tentangkami">
+        <div class="container">
+            <div class="row mb-3 pt-auto">
+                <div class="col text-center about">
+                    <h2>Tentang Kami</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md text-center mt-3">
+                    <!-- Gambar yang menggunakan persen untuk width nya akan mengikuti body atau jenis halamannya -->
+                    <img src="picture/icon/humaaans.png" style="width:80%" class=" gkiri">
+                </div>
+
+                <div class="col-md-6 text-justify mt-3 font">
+                    <p class="paragkanan">Kami menyediakan berbagai macam barang yang bisa anda pesan secara online.
+                        Seperti minyak, air
+                        mineral, berbagai jenis plastik, <i>frozen food</i>, dan masih banyak lagi. Jika anda seorang
+                        distributor atau reseller, anda bisa berlangganan bersama kami. Dijamin 100% terpercaya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir tentang kami -->
+
+    <!-- Produk Kami -->
+    <section class="produk pb-4 color" id="produk">
+        <div class="container">
+            <div class="row mb-3 pt-5">
+                <div class="col text-center about">
+                    <h2>Produk Kami</h2>
+                </div>
+            </div>
+
+            <div class="row mb-3 text-center">
+                <div class="col-md-4 mt-3">
+                    <div class="card">
+                        <img src="picture/picture/20200831_160718_0000.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Plastik</h5>
+                            <p class="card-text">Mulai dari Rp 12.500</p>
+                            <a href="halaman plastik.html" class="btn button tombol">Detail Harga</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                    <div class="card">
+                        <img src="picture/picture/tokouni.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Frozen Food</h5>
+                            <p class="card-text">Mulai dari Rp 10.000</p>
+                            <a href="halaman frozen food.html" class="btn button tombol">Detail Harga</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                    <div class="card">
+                        <img src="picture/picture/Kumpulan air mineral rezise.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Air mineral</h5>
+                            <p class="card-text">Mulai dari Rp 17.000</p>
+                            <a href="halaman air mineral.html" class="btn button tombol">Detail Harga</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-4 mt-3">
+                    <div class="card">
+                        <img src="picture/picture/20200907_174140_0000.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lain - lain</h5>
+                            <p class="card-text">Mulai dari Rp 12.500</p>
+                            <a href="halaman lainnya.html" class="btn button tombol">Detail Harga</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Produk Kami -->
+
+    <!-- Info panel -->
+    <section id="keuntungan" class="keuntungan mt-4">
+        <div class="container">
+            <div class="row pt-4 mb-4 txt">
+                <div class="col text-center">
+                    <h2>Keuntungan Berlangganan di Toko Uni</h2>
+                </div>
+            </div>
+
+            <div class="row text-center mt-4">
+
+                <div class="col-md-4 info pr-4">
+                    <img src="picture/icon/Text-SMS.png" alt="Employee">
+                    <h4>Respon Cepat</h4>
+                    <p>Chat akan dibalas dengan cepat oleh kami.</p>
+                </div>
+
+                <div class="col-md-4 info">
+                    <img src="picture/icon/Medal.png" alt="High-Res">
+                    <h4>Pelayanan Terbaik</h4>
+                    <p>Kami memberikan produk dengan kualitas terbaik.</p>
+                </div>
+
+                <div class="col-md-4 mb-3 info">
+                    <img src="picture/icon/Test passed.png" alt="Security">
+                    <h4>Via Online</h4>
+                    <p>Rasakan kemudahan melakukan pemesanan cukup dengan sekali klik</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Akhir Info Panel -->
+
+    <!-- Footer 1 -->
+    <section class="pt-4 footer">
+        <div class="container white">
+            <div class="row">
+                <div class="col-md-4 mt-3">
+                    <h4>Tentang Kami</h4>
+                    <br>
+                    <p>Toko Uni adalah toko yang menyediakan banyak kebutuhan yang bisa dibeli via online.
+                        Jika anda seorang distributor atau agen reseller bisa mampir ke website kami</p>
+                </div>
+
+                <div class="col-md-4 mt-3">
+                    <h4>Kontak Kami</h4>
+                    <br>
+
+                    <p>Toko Sembako Uni</p>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=6282116796993&text=Saya%20tertarik%20
+                    untuk%20membeli%20beras merah premium seharga 40k%2Fkg%0ADengan jumlah=%0AAlamat=%0ACatatan(Optional)=%0APembayaran Melalui=Transfer/COD (hapus salah satu)">No.
+                        Telp : 082116796993
+                    </a>
+                    <br>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=6282116796993&text=Saya%20tertarik%20
+                untuk%20membeli%20beras merah premium seharga 40k%2Fkg%0ADengan jumlah=%0AAlamat=%0ACatatan(Optional)=%0APembayaran Melalui=Transfer/COD (hapus salah satu)">No.
+                        Whatsapp : 082116796993
+                    </a>
+                </div>
+
+
+                <div class="col-md-4 mt-3 pb-5">
+                    <h4>Produk Kami</h4>
+                    <br>
+                    <li><a href="halaman plastik.html">Berbagai macam plastik</a></li>
+                    <li><a href="halaman frozen food.html">Frozen Food</a></li>
+                    <li><a href="halaman air mineral.html">Air mineral</a></li>
+                    <li><a href="halaman lainnya.html">Lainnya</a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir footer1 -->
+
+    <!-- Footer2 -->
+    <footer class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p>©2020 by <a href="index.html" style="color: white;"> TOKO UNI</a>. All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir footer2 -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+    <!-- My Java script -->
+    <script src="js/java.js"></script>
+
+    <!-- Button untuk back to top -->
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- Akhir untuk back to top -->
+
+</body>
+
+</html>
